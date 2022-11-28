@@ -1,0 +1,1435 @@
+@top_w: 1200px;
+@textP: 5px 15px 0px 10px;
+@lis_img_w: 86px;
+@lis_img_h: 50px;
+@top_h: 40px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+em {
+    font-style: normal;
+}
+
+ul,
+ol {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+
+    background-color: rgb(246, 246, 246);
+}
+
+.NBA_top {
+    width: 100%;
+    height: 120px;
+    background: url(https://res.nba.cn/static/styles/images/header-bg.png);
+
+    >.top_t {
+        margin: 0 auto;
+        width: @top_w;
+        height: 80px;
+        position: relative;
+
+        >.lis0 {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+
+            >img {
+                width: @lis_img_w;
+                height: @lis_img_h;
+            }
+        }
+
+        >.lis1 {
+            position: absolute;
+            right: 0;
+            top: 10px;
+
+            >img {
+                width: 70px;
+                height: 31;
+            }
+        }
+    }
+
+    >.top_b {
+        width: @top_w ;
+        height: @top_h ;
+        margin: 0 auto;
+        padding-left: 30px;
+
+        >ul {
+            height: @top_h ;
+            position: relative;
+
+            >li {
+                margin-right: 10px;
+                height: @top_h;
+                display: inline-block;
+                line-height: 30px;
+
+                &:first-child {
+                    >a {
+                        color: #00aeff;
+                    }
+                }
+
+                &:nth-last-child(1) {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    margin-right: 0px;
+
+                    >a {
+                        padding: 0px 0px 0px 0px;
+                    }
+                }
+
+                >a {
+                    display: block;
+                    height: @top_h;
+                    padding: @textP;
+
+                    &:hover {
+                        color: #00aeff;
+                    }
+
+                    >em {
+                        color: rgba(172, 172, 172, 0.5);
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.back {
+    margin: 0 auto;
+    width: 100%;
+    height: 950px;
+    background: url(https://res.nba.cn/static/styles/images/bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+
+    .NBA_mian {
+        margin: 0 auto;
+        width: 1220px;
+        background-color: #fff;
+        padding: 15px 10px;
+
+        >.Mian_0 {
+            width: @top_w;
+            height: 140px;
+            background-color: rgba(172, 172, 172, 0.2);
+            border-radius: 5px;
+            box-shadow: 0px 3px 7px #adadad;
+
+            >.left {
+                float: left;
+                margin-left: 12px;
+                margin-top: 11px;
+                width: 120px;
+                height: 120px;
+                background-color: #2464b5;
+
+                >.l_t {
+                    background-color: #0079cd;
+                    width: 106px;
+                    height: 50px;
+                    margin: 8px auto 2px;
+
+                    >.t_l {
+                        float: left;
+                        width: 20px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 22px;
+                    }
+
+                    >.t_mian {
+                        float: left;
+                        text-align: center;
+
+                        >span {
+                            width: 66px;
+                            height: 25px;
+                            display: block;
+                            font-size: 14px;
+                            color: #fff;
+                        }
+                    }
+
+                    >.t_r {
+                        float: right;
+                        width: 20px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 22px;
+                    }
+                }
+
+                >.l_mian {
+                    width: 106px;
+                    height: 20px;
+                    margin: 0px 7px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                }
+
+                >.l_b {
+                    width: 106px;
+                    height: 28px;
+                    margin: 0px 7px;
+                    text-align: center;
+                    color: #fff;
+                    font-size: 14px;
+                    background-color: #0079cd;
+                    line-height: 28px;
+                }
+            }
+
+            >.right {
+                margin-top: 11px;
+                margin-left: 10px;
+                float: left;
+                width: 1045px;
+                height: 140px;
+
+                >.r_l {
+                    float: left;
+                    width: 18px;
+                    height: 120px;
+                    color: #fff;
+                    background-color: #e5e5e5;
+                    text-align: center;
+                    line-height: 120px;
+                }
+
+                >.r_mian {
+                    float: left;
+                    margin-left: 8px;
+                    width: 230px;
+                    height: 120px;
+                    background-color: #fff;
+                    position: relative;
+
+                    >.m_t {
+                        width: 100%;
+                        height: 20px;
+                    }
+
+                    >.m_mian {
+                        display: flex;
+                        width: 100%;
+                        height: 74px;
+                        text-align: center;
+                        justify-content: space-between;
+
+                        >.ml {
+                            width: 50px;
+
+                            >img {
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                                margin: 0px 5px;
+                            }
+
+                            >a {
+                                font-size: 12px;
+                                color: #000;
+                            }
+
+                            >span {
+                                display: block;
+                                font-size: 12px;
+                            }
+                        }
+
+                        >.mzjp {
+                            >span {
+                                display: block;
+                                font-size: 24px;
+                                color: #7F7F7F;
+                                font-weight: bold;
+                                text-align: center;
+                            }
+                        }
+
+                        >.mr {
+                            width: 50px;
+
+                            >img {
+                                display: block;
+                                width: 40px;
+                                height: 40px;
+                                margin: 0px 5px;
+                            }
+
+                            >a {
+                                font-size: 12px;
+                                color: #000;
+                            }
+
+                            >span {
+                                display: block;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    >.m_b {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 20px;
+                        border-top: 1px solid #dcdcdc;
+                    }
+                }
+
+                >.r_r {
+                    float: right;
+                    width: 18px;
+                    height: 120px;
+                    color: #fff;
+                    background-color: #e5e5e5;
+                    text-align: center;
+                    line-height: 120px;
+                }
+            }
+        }
+
+        >.Mian_1 {
+            margin-top: 15px;
+            width: 1200px;
+            height: 330px;
+            position: relative;
+
+            >ul {
+                width: 510px;
+                height: 330px;
+                position: relative;
+                overflow: hidden;
+                float: left;
+
+                >li {
+                    width: 510px;
+                    height: 330px;
+
+                    >span {
+                        color: #fff;
+                        font-size: 20px;
+                        position: absolute;
+                        left: 20px;
+                        bottom: 50px;
+                        z-index: 99;
+                    }
+
+                    >a {
+                        display: block;
+                        width: 510px;
+                        height: 330px;
+
+                        >img {
+                            position: absolute;
+                            left: -50px;
+                            top: 0;
+                            display: block;
+                            width: 633px;
+                            height: 330px;
+                        }
+                    }
+                }
+
+                >ol {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 510px;
+                    height: 82px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    background: url(https://res.nba.cn/static/styles/images/index-banner-mask.png);
+
+                    >li {
+                        margin: 0px 3px;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: #979797;
+                        margin-bottom: 10px;
+                    }
+
+                    >.pos {
+                        background-color: #fff;
+                    }
+                }
+
+                >.imgs_l {
+                    width: 30px;
+                    height: 39px;
+                    position: absolute;
+                    left: 0px;
+                    top: 140px;
+                    background-color: #14171a;
+                    color: #fff;
+                    font-size: 24px;
+                    text-align: center;
+                    line-height: 39px;
+                }
+
+                >.imgs_r {
+                    background-color: #14171a;
+                    width: 30px;
+                    height: 39px;
+                    position: absolute;
+                    right: 0px;
+                    top: 140px;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 39px;
+                    text-align: center;
+
+                }
+            }
+
+            >.mod {
+                margin-left: 20px;
+                float: left;
+                width: 360px;
+                height: 330px;
+
+                >a {
+                    display: block;
+                    width: 360px;
+                    height: 87px;
+                    padding: 10px 0;
+                    border-bottom: 1px solid rgb(164, 164, 164);
+                    &:hover{
+                        >span{
+                            color: #2464B5;
+                        }
+                        
+                    }
+                    &:first-child {
+                        height: 77px;
+                        padding: 0px 0px 10px 0px;
+                    }
+
+                    &:nth-last-child(1) {
+                        border: none;
+                    }
+
+                    >.mod_img {
+                        float: left;
+                        width: 92px;
+                        height: 67px;
+                        overflow: hidden;
+                        position: relative;
+                        margin-right: 10px;
+
+                        >img {
+                            position: absolute;
+                            left: -20px;
+                            top: 0;
+                            width: 129px;
+                            height: 67px;
+                            display: block;
+                        }
+                    }
+
+                    >span {
+                        color: #000;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            >.old {
+                width: 300px;
+                height: 330px;
+                float: left;
+                margin-left: 10px;
+
+                >.old_top {
+                    width: 100%;
+                    height: 40px;
+                    background: url(https://res.nba.cn/static/styles/images/impnews-bg.png);
+
+                    >.o_text {
+                        float: left;
+                        margin-left: 25px;
+                        font-size: 20px;
+                        line-height: 38px;
+                        color: #fff;
+                    }
+
+                    >.o_tab {
+                        font-size: 14px;
+                        color: #fff;
+                        float: right;
+                        line-height: 38px;
+                        margin-right: 10px;
+                    }
+
+                    >.o_tup {
+                        width: 30px;
+                        height: 30px;
+                        background: url(https://res.nba.cn/static/styles/images/icon_24_refresh_white.png) no-repeat;
+                        background-position: 0px 11px;
+                        float: right;
+                    }
+                }
+
+                >.old_mian {
+                    padding-top: 5px;
+                    width: 100%;
+                    background-color: #fafafa;
+
+                    >a {
+                        overflow: hidden;
+                        display: block;
+                        height: 28px;
+                        line-height: 28px;
+                        padding: 0 12px;
+                        color: #000;
+                        font-size: 14px;
+
+                        &:hover {
+                            color: #2464B5;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.Mian_2 {
+            margin-top: 15px;
+            width: 100%;
+            height: 740px;
+
+            >.mess_l {
+                width: 900px;
+                float: left;
+
+                >.me_t {
+                    width: 100%;
+                    height: 40px;
+                    border-bottom: 1px solid #E5E5E5;
+
+                    >a {
+                        display: block;
+                        width: 124px;
+                        height: 39px;
+                        border-bottom: 3px solid #E11647;
+                        position: relative;
+
+                        >em {
+                            position: absolute;
+                            top: 5px;
+                            left: 0;
+                            float: left;
+                            width: 26px;
+                            height: 21px;
+                            background: url(https://res.nba.cn/static/styles/images/news-title-ico.png);
+                        }
+
+                        >span {
+                            float: right;
+                            font-size: 22px;
+                            color: #2464B5;
+                        }
+                    }
+                }
+
+                >.me_i {
+                    width: 100%;
+                    height: 30px;
+
+                    >a {
+                        float: right;
+                        width: 66px;
+                        height: 30px;
+                        background: url(https://res.nba.cn/static/styles/images/switch-icon.png) no-repeat;
+                        background-position: 0px 8px;
+                        color: #2464B5;
+                        font-size: 14px;
+                        text-align: right;
+                        line-height: 30px;
+                        margin-right: 10px;
+                    }
+                }
+
+                >.me_mian {
+                    width: 900px;
+                    height: 640px;
+
+                    >.me_mian0 {
+                        width: 440px;
+                        height: 314px;
+                        float: left;
+                        display: flex;
+                        justify-content: center;
+                        overflow: hidden;
+                        position: relative;
+                        margin: 0 10px 10px 0;
+
+                        &:hover {
+                            >img {
+                                transform: scale(1.1);
+                            }
+                        }
+
+                        >.hei {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 100%;
+                            height: 78px;
+                            background: url(https://res.nba.cn/static/styles/images/mask.png);
+                            z-index: 9;
+                        }
+
+                        >div {
+                            position: absolute;
+                            width: 100%;
+                            height: 78px;
+                            left: 0;
+                            bottom: 0;
+                            color: #fff;
+                            position: absolute;
+                            z-index: 99;
+
+                            >p {
+                                float: left;
+                                margin-left: 15px;
+                                width: 30px;
+                                height: 80px;
+                                background: url(https://res.nba.cn/static/styles/images/icon_24_news_white.png) no-repeat;
+                                background-position: 0 36px;
+                            }
+
+                            >span {
+                                float: left;
+                                font-size: 18px;
+                                line-height: 90px;
+
+                            }
+                        }
+                    }
+
+                    .me_mian1 {
+                        width: 290px;
+                        height: 306px;
+                        float: left;
+                        margin-right: 10px;
+
+                        &:hover {
+                            >.img_s {
+                                >img {
+                                    transform: scale(1.1);
+                                    transition: all 1s;
+                                }
+                            }
+                        }
+
+                        >.img_s {
+                            display: flex;
+                            justify-content: center;
+                            overflow: hidden;
+                            width: 290px;
+                            height: 200px;
+                        }
+
+                        >.wdsx {
+                            color: #333;
+                            padding: 10px;
+                            width: 290px;
+                            height: 106px;
+                            border: 1px solid #E5E5E5;
+                            border-top: none;
+                            position: relative;
+
+                            >em {
+                                position: absolute;
+                                left: 10px;
+                                bottom: 5px;
+                                width: 20px;
+                                height: 20px;
+                                background: url(https://res.nba.cn/static/styles/images/icon_16_news_black.png) no-repeat;
+                            }
+
+                            >span {
+                                position: absolute;
+                                right: 10px;
+                                bottom: 10px;
+                            }
+                        }
+                    }
+
+                    >.bott {
+                        float: left;
+                        width: 890px;
+                        height: 30px;
+                        background-color: #F0F0F0;
+                        color: #2464B5;
+                        margin-top: 10px;
+                        text-align: center;
+
+                        &:hover {
+                            background-color: #2464B5;
+                            color: #F0F0F0;
+                        }
+
+                        >span {
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+
+            >.mess_r {
+                width: 300px;
+                float: left;
+
+                >.typ {
+                    width: 300px;
+                    height: 80px;
+
+                    >a {
+                        float: left;
+                        width: 150px;
+                        height: 40px;
+                        font-size: 14px;
+
+                        &:first-child {
+                            background-color: #2464b5;
+                            text-align: center;
+                            line-height: 40px;
+                            padding: 0 20px;
+                        }
+
+                        &:nth-of-type(2) {
+                            background-color: #e5e5e5;
+                            color: #000;
+                            text-align: center;
+                            line-height: 40px;
+                            padding: 0 20px;
+                        }
+
+                        &:nth-of-type(3) {
+                            color: #e11647;
+                            text-align: center;
+                            border-bottom: 4px solid #e11647;
+                            line-height: 40px;
+                            padding: 0 20px;
+                        }
+
+                        &:nth-last-child(1) {
+                            color: #000;
+                            text-align: center;
+                            line-height: 40px;
+                            padding: 0 20px;
+                            border-bottom: 1px solid #eee;
+                        }
+                    }
+                }
+
+                >.Ranking {
+                    width: 300px;
+                    float: left;
+
+                    >div {
+                        float: left;
+                        height: 26px;
+                        padding: 5px;
+                        font-size: 13px;
+                        text-align: center;
+                    }
+
+                    >.one {
+                        width: 45px;
+                    }
+
+                    >.two {
+                        width: 42px;
+                    }
+
+                    >.three {
+                        width: 89px;
+                    }
+
+                    >.four {
+                        width: 30px;
+                    }
+
+                    >.five {
+                        width: 30px;
+                    }
+
+                    >.six {
+                        width: 64px;
+                    }
+                }
+
+                >.collect {
+                    width: 300px;
+                    float: left;
+
+                    >.thy {
+                        float: left;
+                        width: 100%;
+                        height: 33px;
+                        background-color: #f4f4f4;
+
+                        >div {
+                            float: left;
+                            text-align: center;
+                            height: 33px;
+                            line-height: 33px;
+                            font-size: 13px;
+                            padding: 0px 6px;
+                            font-weight: bold;
+
+                            >img {
+                                width: 29px;
+                                height: 29px;
+                                margin-top: 2px;
+                            }
+
+                            &:first-child {
+                                width: 45px;
+                                height: 33px;
+                                background-color: rgba(146, 144, 144, .1);
+
+                            }
+
+                            &:nth-of-type(3) {
+                                width: 87px;
+                                font-weight: 400;
+
+                                >a {
+                                    color: #0064bb;
+                                }
+                            }
+
+                            &:nth-of-type(4) {
+                                width: 30px;
+                            }
+
+                            &:nth-of-type(5) {
+                                width: 30px;
+                            }
+
+                            &:nth-of-type(6) {
+                                width: 65px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >.Mian_3 {
+            margin-top: 10px;
+            width: 1200px;
+
+            >.ttt {
+                width: 1200px;
+                height: 41px;
+                border-bottom: 1px solid #e5e5e5;
+
+                >em {
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background: url(https://res.nba.cn/static/styles/images/video-title-ico.png) no-repeat;
+                    background-position: 5px 8px;
+                }
+
+                >p {
+                    width: 100px;
+                    float: left;
+                    color: #2464b5;
+                    font-size: 22px;
+                }
+
+                >._top {
+                    float: left;
+
+                    >span {
+                        text-align: center;
+                        line-height: 33px;
+                        display: inline-block;
+                        width: 120px;
+                        height: 33px;
+                    }
+
+                    >.cur {
+                        color: #e11647;
+                        border-bottom: 3px solid #e11647;
+                    }
+                }
+
+                >span {
+                    float: right;
+                    color: #2464b5;
+                    height: 40px;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #00AEFF;
+                    }
+                }
+            }
+
+            >.li_box {
+                width: 1220px;
+                height: 500px;
+
+                >.list {
+                    float: left;
+                    padding-top: 10px;
+                    margin-right: 20px;
+                    width: 285px;
+                    height: 245px;
+                    position: relative;
+                    overflow: hidden;
+                    padding-top: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        >a {
+                            overflow: hidden;
+                            >img {
+                                transform: scale(1.1);
+                                transition: all 1s;
+                            }
+                        }
+                    }
+
+                    >a {
+                        display: flex;
+                        justify-content: center;
+                        width: 285px;
+                        height: 203px;
+                        position: relative;
+
+                        >img {
+                            display: block;
+                            width: 361px;
+                            height: 203px;
+                        }
+
+                        >p {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 285px;
+                            height: 50px;
+                            background: url(https://res.nba.cn/static/styles/images/mask-bg.png);
+                        }
+                    }
+
+                    >em {
+                        position: absolute;
+                        left: 5px;
+                        bottom: 39px;
+                        width: 30px;
+                        height: 30px;
+                        background: url(https://res.nba.cn/static/styles/images/icon_16_video_white.png) no-repeat;
+                        background-position: 10px 5px;
+                    }
+
+                    >s {
+                        color: #fff;
+                        position: absolute;
+                        right: 10px;
+                        bottom: 45px;
+                        font-size: 14px;
+                        text-decoration: none;
+                    }
+
+                    >span {
+                        display: block;
+                        width: 285px;
+                        height: 32px;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                        line-height: 32px;
+                        color: #000;
+                    }
+
+                }
+            }
+
+        }
+
+        >.Mian_4 {
+            width: 1140px;
+
+            >.mian_4_top {
+                margin: 20px 30px;
+                height: 35px;
+                line-height: 36px;
+                border-bottom: 1px solid #eee;
+
+                >span {
+                    float: left;
+                    font-size: 20px;
+                    color: #3464af;
+                    font-weight: bold;
+                    margin-left: 10px;
+                }
+
+                >p {
+                    float: left;
+                    width: 30px;
+                    height: 30px;
+                    background: url(https://res.nba.cn/media/img/players/sheet_logo.png) no-repeat;
+                    background-size: cover;
+                }
+
+                >.top_4_see {
+                    float: left;
+                    margin-left: 30px;
+                    font-size: 18px;
+
+                    >.she {
+                        border-bottom: 3px solid red;
+                        color: red;
+                    }
+                }
+
+                >em {
+                    float: right;
+                    font-style: normal;
+                    color: #428bca;
+
+                    &:hover {
+                        color: #356da0;
+                    }
+                }
+            }
+
+            >.mian_4_mian {
+                width: 1200px;
+                height: 361px;
+
+                >ul {
+                    >li {
+                        float: left;
+                        width: 234px;
+                        height: 361px;
+                        border-right: 1px solid #eee;
+
+                        >.top_tab {
+                            float: right;
+                            width: 208px;
+                            height: 25px;
+                            background: url(https://res.nba.cn/media/img/players/leader_title.png) no-repeat;
+                            color: #fff;
+
+                            >span {
+                                margin-left: 15px;
+                            }
+                        }
+
+                        >.top_log {
+                            float: right;
+                            width: 218px;
+                            height: 50px;
+
+                            >img {
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                margin-left: 10px;
+                            }
+                        }
+
+                        >.top_okl {
+                            float: right;
+                            width: 203px;
+                            height: 147px;
+                            margin: 0px 15px 20px;
+                            border-bottom: 1px solid #eee;
+
+                            >img {
+                                float: left;
+                                width: 91px;
+                                height: 145px;
+                            }
+
+                            >a {
+                                height: 40px;
+
+                                >.okl_two {
+                                    color: #356da0;
+                                    height: 20px;
+                                }
+
+                                >.okl_therr {
+                                    color: #356da0;
+                                    height: 20px;
+                                }
+                            }
+
+                            >.okl_one {
+                                height: 50px;
+                                font-size: 35px;
+                            }
+
+                            >.okl_for {
+                                font-size: 13px;
+
+                                >em {
+                                    font-style: normal;
+                                }
+                            }
+                        }
+
+                        >.top_shte {
+                            float: right;
+                            width: 203px;
+                            height: 45px;
+                            padding-bottom: 10px;
+                            margin-bottom: 20px;
+                            margin-right: 15px;
+                            position: relative;
+                            border-bottom: 1px solid #eee;
+
+                            &:nth-last-child(1) {
+                                border: none;
+                            }
+
+                            >.shte {
+                                width: 169px;
+                                font-size: 12px;
+
+                                >img {
+                                    float: left;
+                                    width: 35px;
+                                    height: 26px;
+                                }
+
+                                >span {
+                                    display: block;
+                                    width: 99px;
+                                    margin-left: 40px;
+                                }
+
+                                >.the {
+                                    float: left;
+                                    height: 17px;
+                                    margin-left: 5px;
+                                }
+                            }
+
+                            >span {
+                                position: absolute;
+                                right: 10px;
+                                top: 5px;
+                                width: 45px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        >.Mian_5 {
+            width: 1200px;
+            height: 508px;
+
+            >.top {
+                width: 100%;
+                height: 41px;
+                font-size: 22px;
+                color: #2464b5;
+                border-bottom: 1px solid #E1E1E1;
+                margin-bottom: 30px;
+
+                >div {
+                    float: left;
+
+                    >img {
+                        margin-top: 10px;
+                    }
+                }
+
+                >span {
+                    margin-left: 10px;
+                    line-height: 41px;
+                }
+            }
+
+            >.mian {
+                float: left;
+                width: 918px;
+                height: 436px;
+
+                >li {
+                    float: left;
+                    width: 286px;
+                    height: 203px;
+                    margin-bottom: 30px;
+                    margin-right: 20px;
+
+                    >a {
+                        float: left;
+                        width: 286px;
+                        height: 203px;
+                        position: relative;
+
+                        >img {
+                            display: block;
+                            width: 286px;
+                            height: 203px;
+                        }
+
+                        >.all {
+                            position: absolute;
+                            left: 0px;
+                            bottom: 0px;
+                            width: 100%;
+                            height: 41px;
+                        }
+                    }
+                }
+            }
+
+            >.r {
+                float: left;
+                width: 282px;
+
+                >.top {
+                    width: 100%;
+                    height: 39px;
+                    line-height: 39px;
+                    background-color: #2464b5;
+                    color: #fff;
+                    padding: 0 12px;
+                    font-size: 18px;
+                }
+
+                >.mian {
+                    width: 100%;
+                    height: 280px;
+                    background: url(https://res.nba.cn/resource/mat1/chinanba/web/statics/vote-bg_5cf62e.png) no-repeat;
+                    padding: 20px 20px 20px 10px;
+                    position: relative;
+
+                    >ul {
+                        padding: 14px 0 4px 28px;
+
+                        >li {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                    >.but {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0px;
+                        width: 100%;
+                        margin-bottom: 20px;
+                        height: 38px;
+
+                        >button {
+                            width: 98px;
+                            height: 38px;
+                            border: none;
+                            font-size: 16px;
+                        }
+
+                        >.tj {
+                            margin-left: 40px;
+                            background-color: #2464b5;
+                            color: #fff;
+                        }
+
+                        >.ck {
+                            background-color: #e5e5e5;
+                        }
+                    }
+                }
+
+                >.bot {
+                    width: 283px;
+                    height: 100px;
+                    margin-top: 17px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        >.Mian_6 {
+            width: 1200px;
+            height: 80px;
+            margin: 20px 0;
+
+            >ul {
+                width: 1200px;
+                height: 80px;
+
+                >li {
+                    float: left;
+                    width: 138px;
+                    height: 80px;
+                    border: 1px solid #E6E6E6;
+                    border-radius: 5px;
+                    margin-right: 15px;
+
+                    &:first-child {
+                        >span {
+                            margin-left: 20px;
+                        }
+                    }
+
+                    >img {
+                        margin: 18px 4px 0px 10px;
+                        float: left;
+                        width: 44px;
+                        height: 44px;
+                    }
+
+                    >span {
+                        font-size: 14px;
+                        line-height: 80px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        >.Mian_7 {
+            width: 1200px;
+            height: 423px;
+            text-align: center;
+            line-height: 41px;
+            position: relative;
+
+            >.top {
+                border-bottom: 1px solid #E1E1E1;
+                height: 41px;
+            }
+
+            >.a {
+                >a {
+                    float: left;
+                    width: 130px;
+                    height: 52px;
+                    margin: 25px 10px 0px 10px;
+
+                    >img {
+                        width: 130px;
+                        height: 52px;
+                    }
+                }
+            }
+
+            >.sponsor {
+                float: left;
+                width: 1200px;
+                // position: absolute;
+                // left: 0;
+                // bottom: 0px;
+                text-align: left;
+                padding: 20px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.tail {
+    width: 100%;
+    height: 250px;
+    float: left;
+    background: url(https://res.nba.cn/static/styles/images/footer-bg.png);
+    background-size: cover;
+
+    >.box {
+        margin: 0 auto;
+        width: 1200px;
+        height: 250px;
+
+        >li {
+            float: left;
+            width: 210px;
+            height: 250px;
+
+            >span {
+                display: block;
+                font-size: 18px;
+                height: 65px;
+                line-height: 65px;
+                color: #fff;
+            }
+
+            >a {
+                display: block;
+                font-size: 14px;
+                margin-bottom: 7px;
+            }
+
+            >img {
+                width: 125px;
+                height: 125px;
+            }
+        }
+    }
+}
+
+.last {
+    float: left;
+    width: 100%;
+    height: 165px;
+    background-color: #1f2428;
+
+    >.last_mian {
+        padding-top: 20px;
+        margin: 0 auto;
+        width: 1200px;
+        font-size: 12px;
+
+        >p {
+            height: 25px;
+            text-align: center;
+
+            >em {
+                font-style: italic;
+                color: #fff;
+            }
+
+            >span {
+                color: #fff;
+            }
+
+            a {
+                color: #356da0;
+            }
+        }
+    }
+}
